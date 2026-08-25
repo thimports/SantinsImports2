@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>SmartWatch GPS 1.43” AMOLED com Bluetooth e Alexa | Santins Imports</title>
+<meta name="description" content="SmartWatch GPS com tela AMOLED de 1,43”, chamadas por Bluetooth, Alexa integrada, 3ATM e até 7 dias de bateria. Preto ou Titanium." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Archivo, Helvetica, sans-serif; color: #090909; background: #fff; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  img { display: block; max-width: 100%; }
+  button { font-family: inherit; cursor: pointer; border: 0; }
+  a { color: #090909; text-decoration: none; }
+  a:hover { color: #E30613; }
+  ::selection { background: #E30613; color: #fff; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { max-width: 100vw; }
+  img, video { max-width: 100%; }
+  h1, h2, h3, p, span, strong, a, li, button { overflow-wrap: anywhere; }
+  @media (max-width: 899px) {
+    input, select, textarea { font-size: 16px; }
+    body { padding-bottom: 84px; }
+  }
+  @keyframes revealUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes drawerIn { from { transform: translateX(100%); } to { transform: none; } }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+</style>
+</helmet>
+
+<dc-import name="Header" hint-size="100%,150px"></dc-import>
+
+<main style="width:100%;overflow-x:hidden;">
+
+  <section style="max-width:1360px;margin:0 auto;padding:22px 20px 8px;">
+    <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#8A8A8A;letter-spacing:.06em;">
+      <a href="index.html" style="color:#8A8A8A;">Início</a> / <a href="catalogo.html" style="color:#8A8A8A;">Catálogo</a> / <span style="color:#090909;">SmartWatch GPS 1.43” AMOLED</span>
+    </p>
+  </section>
+
+  <section style="max-width:1360px;margin:0 auto;padding:14px 20px 60px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(400px,100%),1fr));gap:clamp(28px,4vw,64px);align-items:start;">
+
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div onClick="{{ openLightbox }}" onTouchStart="{{ onTouchStart }}" onTouchEnd="{{ onTouchEnd }}" style="position:relative;background:#F4F4F4;aspect-ratio:1/1;overflow:hidden;cursor:zoom-in;">
+        <img src="{{ mainSrc }}" alt="SmartWatch GPS 1.43 AMOLED" style="width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.3,1);" style-hover="transform:scale(1.1);" />
+        <span style="position:absolute;top:16px;left:16px;background:#090909;color:#fff;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;padding:7px 11px;">DESTAQUE SANTINS</span>
+        <span style="position:absolute;bottom:16px;right:16px;background:rgba(255,255,255,.9);font-family:'JetBrains Mono',monospace;font-size:11px;padding:6px 10px;">{{ counter }}</span>
+        <button onClick="{{ prev }}" aria-label="Anterior" style="position:absolute;top:50%;left:14px;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.92);font-size:16px;display:flex;align-items:center;justify-content:center;transition:background .2s,color .2s;" style-hover="background:#E30613;color:#fff;">‹</button>
+        <button onClick="{{ next }}" aria-label="Próxima" style="position:absolute;top:50%;right:14px;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.92);font-size:16px;display:flex;align-items:center;justify-content:center;transition:background .2s,color .2s;" style-hover="background:#E30613;color:#fff;">›</button>
+      </div>
+      <div style="display:flex;gap:10px;overflow-x:auto;padding-bottom:4px;">
+        <sc-for list="{{ imgs }}" as="im" hint-placeholder-count="6">
+          <button onClick="{{ im.select }}" style="flex:0 0 auto;width:88px;height:88px;background:#F4F4F4;padding:0;border:2px solid {{ im.border }};transition:border-color .2s;overflow:hidden;">
+            <img src="{{ im.src }}" alt="{{ im.alt }}" style="width:100%;height:100%;object-fit:cover;" />
+          </button>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap;">
+        <span style="display:flex;align-items:center;gap:7px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;">
+          <span style="width:7px;height:7px;border-radius:50%;background:#E30613;display:block;"></span>{{ estoqueLabel }}
+        </span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#9A9A9A;letter-spacing:.08em;">SKU: SI-SW143-{{ skuVar }}</span>
+      </div>
+
+      <h1 style="margin:0;font-size:clamp(28px,4vw,46px);line-height:1.05;font-weight:900;letter-spacing:-.035em;text-wrap:balance;">SmartWatch GPS 1.43” AMOLED<br /><span style="color:#6B6B6B;font-weight:800;">Bluetooth e Alexa</span></h1>
+
+      <p style="margin:18px 0 0;font-size:15px;line-height:1.65;color:#4A4A4A;max-width:52ch;text-wrap:pretty;">Tela AMOLED de 1,43” com Always-On, GPS integrado, chamadas por Bluetooth e Alexa embarcada. Um relógio que acompanha o treino, a rotina e o look, sem precisar do celular na mão.</p>
+
+      <sc-if value="{{ mostrarNota }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;align-items:center;gap:10px;margin-top:18px;flex-wrap:wrap;">
+          <span style="color:#E30613;font-size:15px;letter-spacing:.08em;">★★★★★</span>
+          <span style="font-size:14px;font-weight:800;">{{ nota }}</span>
+          <span style="font-size:13px;color:#8A8A8A;">| {{ totalAvaliacoes }} avaliações de clientes</span>
+        </div>
+      </sc-if>
+
+      <div style="margin-top:24px;background:#F4F4F4;padding:24px;display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+          <span style="font-size:14px;color:#8A8A8A;text-decoration:line-through;">De {{ precoDe }}</span>
+          <span style="background:#E30613;color:#fff;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;padding:4px 8px;">{{ descontoLabel }}</span>
+        </div>
+        <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;">
+          <span style="font-size:clamp(32px,4.6vw,44px);font-weight:900;letter-spacing:-.03em;line-height:1;">{{ precoPor }}</span>
+          <span style="font-size:13px;color:#6B6B6B;">à vista</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:4px;">
+          <span style="font-size:15px;font-weight:700;color:#B0000A;">{{ precoPix }} no PIX</span>
+          <span style="background:#090909;color:#fff;font-family:'JetBrains Mono',monospace;font-size:10px;padding:4px 7px;letter-spacing:.08em;">7% OFF NO PIX</span>
+        </div>
+        <p style="margin:2px 0 0;font-size:13px;color:#6B6B6B;">Parcele em até {{ parcelas }}x de {{ parcelaValor }} no cartão</p>
+      </div>
+
+      <div style="margin-top:26px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;gap:12px;flex-wrap:wrap;">
+          <span style="font-size:12px;font-weight:800;letter-spacing:.1em;">COR <span style="color:#E30613;">{{ variante }}</span></span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#9A9A9A;letter-spacing:.06em;">2 VARIANTES DISPONÍVEIS</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <sc-for list="{{ variantes }}" as="v" hint-placeholder-count="2">
+            <button onClick="{{ v.select }}" style="display:flex;align-items:center;gap:12px;padding:12px 18px 12px 12px;background:{{ v.bg }};color:{{ v.fg }};border:1.5px solid {{ v.border }};transition:all .18s;" style-hover="border-color:#090909;">
+              <span style="width:44px;height:44px;background:#F4F4F4;border:1px solid rgba(0,0,0,.12);overflow:hidden;display:block;flex:0 0 auto;"><img src="{{ v.thumb }}" alt="{{ v.nome }}" style="width:100%;height:100%;object-fit:cover;" /></span>
+              <span style="font-size:14px;font-weight:800;letter-spacing:.04em;">{{ v.nome }}</span>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="margin-top:26px;display:flex;flex-direction:column;gap:11px;">
+        <button onClick="{{ buyNow }}" style="width:100%;background:#E30613;color:#fff;font-size:15px;font-weight:900;letter-spacing:.12em;padding:21px;transition:background .2s,transform .2s,box-shadow .2s;box-shadow:0 8px 24px rgba(227,6,19,.24);" style-hover="background:#B0000A;transform:translateY(-2px);box-shadow:0 14px 30px rgba(227,6,19,.3);">COMPRAR AGORA</button>
+        <button onClick="{{ addToCart }}" style="width:100%;background:#fff;color:#090909;border:1.5px solid #090909;font-size:14px;font-weight:800;letter-spacing:.12em;padding:19px;transition:background .2s,color .2s;" style-hover="background:#090909;color:#fff;">ADICIONAR AO CARRINHO</button>
+        <p style="margin:2px 0 0;text-align:center;font-family:'JetBrains Mono',monospace;font-size:11px;color:#8A8A8A;letter-spacing:.06em;">Compra segura • Envio rastreado</p>
+
+        <div style="margin-top:4px;border:1px solid #E6E6E6;border-radius:8px;padding:12px 14px;display:flex;align-items:center;gap:12px;">
+          <div style="flex:0 0 auto;display:flex;align-items:center;">
+            <span style="width:30px;height:30px;border-radius:50%;border:2px solid #fff;background:#F0F0F0;overflow:hidden;display:block;"><img src="assets/pasted-1787607141969-0.jpg" alt="Foto de cliente" style="width:100%;height:100%;object-fit:cover;" /></span>
+            <span style="width:30px;height:30px;border-radius:50%;border:2px solid #fff;background:#F0F0F0;overflow:hidden;display:block;margin-left:-10px;"><img src="assets/pasted-1787607131670-0.jpg" alt="Foto de cliente" style="width:100%;height:100%;object-fit:cover;" /></span>
+            <span style="width:30px;height:30px;border-radius:50%;border:2px solid #fff;background:#F0F0F0;overflow:hidden;display:block;margin-left:-10px;"><img src="assets/pasted-1787607185269-0.jpg" alt="Foto de cliente" style="width:100%;height:100%;object-fit:cover;" /></span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;min-width:0;">
+            <span style="display:flex;align-items:center;gap:7px;flex-wrap:wrap;">
+              <span style="color:#E30613;font-size:12px;letter-spacing:.06em;">★★★★★</span>
+              <strong style="font-size:13px;">{{ nota }}</strong>
+              <span style="font-size:12px;color:#8A8A8A;">· {{ totalFotos }} avaliações com fotos reais</span>
+            </span>
+            <span style="font-size:13px;color:#3A3A3A;line-height:1.45;">“A tela AMOLED é linda, dá para ler no sol sem esforço” — Rodrigo A.</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(140px,100%),1fr));gap:1px;border:1px solid #EDEDED;">
+        <div style="padding:18px;border-right:1px solid #EDEDED;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;color:#9A9A9A;">TELA</span><p style="margin:8px 0 0;font-size:16px;font-weight:900;letter-spacing:-.02em;">1,43” AMOLED</p></div>
+        <div style="padding:18px;border-right:1px solid #EDEDED;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;color:#9A9A9A;">BATERIA</span><p style="margin:8px 0 0;font-size:16px;font-weight:900;letter-spacing:-.02em;">Até 7 dias</p></div>
+        <div style="padding:18px;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;color:#9A9A9A;">RESISTÊNCIA</span><p style="margin:8px 0 0;font-size:16px;font-weight:900;letter-spacing:-.02em;">3ATM</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="border-top:1px solid #EDEDED;border-bottom:1px solid #EDEDED;">
+    <div style="max-width:1360px;margin:0 auto;padding:34px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:18px;">
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:20px;background:#F4F4F4;transition:transform .25s,background .25s;" style-hover="transform:translateY(-3px);background:#EFEFEF;">
+        <span style="flex:0 0 auto;width:34px;height:34px;background:#090909;display:flex;align-items:center;justify-content:center;"><span style="width:13px;height:15px;border:2px solid #E30613;border-radius:2px 2px 6px 6px;display:block;"></span></span>
+        <span style="display:flex;flex-direction:column;gap:5px;"><strong style="font-size:13px;letter-spacing:.06em;">COMPRA SEGURA</strong><span style="font-size:13px;color:#6B6B6B;line-height:1.5;">Seus dados protegidos durante toda a compra.</span></span>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:20px;background:#F4F4F4;transition:transform .25s,background .25s;" style-hover="transform:translateY(-3px);background:#EFEFEF;">
+        <span style="flex:0 0 auto;width:34px;height:34px;background:#090909;display:flex;align-items:center;justify-content:center;"><span style="width:16px;height:11px;border:2px solid #E30613;border-radius:2px;display:block;"></span></span>
+        <span style="display:flex;flex-direction:column;gap:5px;"><strong style="font-size:13px;letter-spacing:.06em;">ENVIO RASTREADO</strong><span style="font-size:13px;color:#6B6B6B;line-height:1.5;">Acompanhe seu pedido durante a entrega.</span></span>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:20px;background:#F4F4F4;transition:transform .25s,background .25s;" style-hover="transform:translateY(-3px);background:#EFEFEF;">
+        <span style="flex:0 0 auto;width:34px;height:34px;background:#090909;display:flex;align-items:center;justify-content:center;"><span style="width:15px;height:13px;border:2px solid #E30613;border-radius:3px;display:block;"></span></span>
+        <span style="display:flex;flex-direction:column;gap:5px;"><strong style="font-size:13px;letter-spacing:.06em;">SUPORTE ESPECIALIZADO</strong><span style="font-size:13px;color:#6B6B6B;line-height:1.5;">Atendimento para ajudar você.</span></span>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:20px;background:#F4F4F4;transition:transform .25s,background .25s;" style-hover="transform:translateY(-3px);background:#EFEFEF;">
+        <span style="flex:0 0 auto;width:34px;height:34px;background:#090909;display:flex;align-items:center;justify-content:center;"><span style="width:16px;height:12px;border:2px solid #E30613;display:block;"></span></span>
+        <span style="display:flex;flex-direction:column;gap:5px;"><strong style="font-size:13px;letter-spacing:.06em;">PAGAMENTO SEGURO</strong><span style="font-size:13px;color:#6B6B6B;line-height:1.5;">Compre com segurança e praticidade.</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid #EDEDED;background:#fff;">
+    <div style="max-width:1360px;margin:0 auto;padding:clamp(48px,6vw,84px) 20px;">
+      <h2 style="margin:0 auto;max-width:22ch;text-align:center;font-size:clamp(26px,3.6vw,42px);line-height:1.08;font-weight:900;letter-spacing:-.035em;text-wrap:balance;">{{ clientesTitulo }}</h2>
+      <p style="margin:14px auto 0;text-align:center;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;color:#9A9A9A;">ENTREGAS REAIS · SANTINS IMPORTS</p>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:20px;">
+          <sc-for list="{{ clientes }}" as="c" hint-placeholder-count="4">
+            <figure style="margin:0;display:flex;flex-direction:column;">
+              <div style="background:#F4F4F4;aspect-ratio:1/1;overflow:hidden;">
+                <img src="{{ c.src }}" alt="{{ c.alt }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.3,1);" style-hover="transform:scale(1.05);" />
+              </div>
+              <figcaption style="background:#F4F4F4;padding:22px 20px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;flex:1;">
+                <span style="color:#E30613;font-size:15px;letter-spacing:.14em;">★★★★★</span>
+                <p style="margin:0;font-size:14px;line-height:1.6;color:#3A3A3A;text-wrap:pretty;">“{{ c.text }}”</p>
+                <strong style="margin-top:auto;font-size:12px;font-weight:900;letter-spacing:.12em;">{{ c.name }}</strong>
+              </figcaption>
+            </figure>
+          </sc-for>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <div style="margin:34px -20px 0;padding:0 20px 6px;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;">
+          <sc-for list="{{ clientes }}" as="c" hint-placeholder-count="4">
+            <figure style="margin:0;flex:0 0 auto;width:min(78vw,300px);scroll-snap-align:center;display:flex;flex-direction:column;">
+              <div style="background:#F4F4F4;aspect-ratio:1/1;overflow:hidden;">
+                <img src="{{ c.src }}" alt="{{ c.alt }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+              </div>
+              <figcaption style="background:#F4F4F4;padding:20px 18px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;flex:1;">
+                <span style="color:#E30613;font-size:15px;letter-spacing:.14em;">★★★★★</span>
+                <p style="margin:0;font-size:14px;line-height:1.6;color:#3A3A3A;text-wrap:pretty;">“{{ c.text }}”</p>
+                <strong style="margin-top:auto;font-size:12px;font-weight:900;letter-spacing:.12em;">{{ c.name }}</strong>
+              </figcaption>
+            </figure>
+          </sc-for>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <section style="background:#090909;color:#fff;">
+    <div style="max-width:1360px;margin:0 auto;padding:clamp(56px,7vw,104px) 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr));gap:clamp(34px,5vw,72px);align-items:center;">
+      <div>
+        <p style="margin:0 0 20px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;color:#E30613;">SANTINS SELECT</p>
+        <h2 style="margin:0;font-size:clamp(30px,4.4vw,56px);line-height:1.04;font-weight:900;letter-spacing:-.035em;text-wrap:balance;">O pulso decide o ritmo do dia.</h2>
+        <p style="margin:24px 0 0;font-size:16px;line-height:1.7;color:#B5B5B5;max-width:48ch;text-wrap:pretty;">Um relógio que atende a chamada, mostra a rota, conta o passo e ainda combina com o que você está vestindo. Tudo em uma tela AMOLED que continua legível no sol.</p>
+        <div style="margin-top:34px;display:flex;gap:34px;flex-wrap:wrap;">
+          <span style="display:flex;flex-direction:column;gap:6px;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;color:#7A7A7A;">MODELO</span><span style="font-size:15px;font-weight:800;letter-spacing:.04em;">SMARTWATCH GPS 1.43”</span></span>
+          <span style="display:flex;flex-direction:column;gap:6px;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;color:#7A7A7A;">VARIANTES</span><span style="font-size:15px;font-weight:800;letter-spacing:.04em;">PRETO / TITANIUM</span></span>
+        </div>
+        <button onClick="{{ buyNow }}" style="margin-top:38px;background:#E30613;color:#fff;font-size:13px;font-weight:800;letter-spacing:.12em;padding:17px 34px;transition:background .2s,transform .2s;" style-hover="background:#B0000A;transform:translateY(-2px);">COMPRAR AGORA</button>
+      </div>
+      <div style="position:relative;background:#141414;aspect-ratio:1/1;overflow:hidden;">
+        <img src="assets/chatgpt-image-17-de-jul-de-2026-20-58-28-1.jpg" alt="Mostrador AMOLED do SmartWatch" style="width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.3,1);" style-hover="transform:scale(1.05);" />
+        <span style="position:absolute;left:0;bottom:0;background:#E30613;color:#fff;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;padding:9px 14px;">1.43” AMOLED</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1360px;margin:0 auto;padding:clamp(56px,7vw,100px) 20px;">
+    <div style="max-width:640px;">
+      <p style="margin:0 0 16px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;color:#E30613;">POR QUE ESTE MODELO?</p>
+      <h2 style="margin:0;font-size:clamp(28px,4vw,46px);line-height:1.06;font-weight:900;letter-spacing:-.035em;text-wrap:balance;">Feito para acompanhar o seu ritmo.</h2>
+    </div>
+    <div style="margin-top:46px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:2px;background:#E9E9E9;border:1px solid #E9E9E9;">
+      <div style="background:#fff;padding:34px 28px;transition:background .25s;" style-hover="background:#F4F4F4;">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#E30613;letter-spacing:.16em;">01</span>
+        <h3 style="margin:16px 0 10px;font-size:16px;font-weight:900;letter-spacing:.08em;">TELA AMOLED 1,43”</h3>
+        <p style="margin:0;font-size:14px;line-height:1.65;color:#6B6B6B;">Cores vivas, pretos profundos e modo Always-On para ver a hora sem levantar o pulso.</p>
+      </div>
+      <div style="background:#fff;padding:34px 28px;transition:background .25s;" style-hover="background:#F4F4F4;">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#E30613;letter-spacing:.16em;">02</span>
+        <h3 style="margin:16px 0 10px;font-size:16px;font-weight:900;letter-spacing:.08em;">GPS INTEGRADO</h3>
+        <p style="margin:0;font-size:14px;line-height:1.65;color:#6B6B6B;">Registre a rota da corrida ou do pedal direto no relógio e acompanhe a distância na tela.</p>
+      </div>
+      <div style="background:#fff;padding:34px 28px;transition:background .25s;" style-hover="background:#F4F4F4;">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#E30613;letter-spacing:.16em;">03</span>
+        <h3 style="margin:16px 0 10px;font-size:16px;font-weight:900;letter-spacing:.08em;">CHAMADAS E ALEXA</h3>
+        <p style="margin:0;font-size:14px;line-height:1.65;color:#6B6B6B;">Atenda e faça ligações por Bluetooth e use comandos de voz com a Alexa integrada.</p>
+      </div>
+      <div style="background:#fff;padding:34px 28px;transition:background .25s;" style-hover="background:#F4F4F4;">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#E30613;letter-spacing:.16em;">04</span>
+        <h3 style="margin:16px 0 10px;font-size:16px;font-weight:900;letter-spacing:.08em;">BATERIA DE 7 DIAS</h3>
+        <p style="margin:0;font-size:14px;line-height:1.65;color:#6B6B6B;">Até 7 dias em uso típico e 12 horas com GPS ativo, com carga magnética rápida.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#F4F4F4;">
+    <div style="max-width:1360px;margin:0 auto;padding:clamp(56px,7vw,100px) 20px;">
+      <div style="max-width:640px;">
+        <p style="margin:0 0 16px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;color:#E30613;">ESPECIFICAÇÕES VISUAIS</p>
+        <h2 style="margin:0;font-size:clamp(28px,4vw,46px);line-height:1.06;font-weight:900;letter-spacing:-.035em;text-wrap:balance;">Detalhes que fazem a diferença.</h2>
+        <p style="margin:20px 0 0;font-size:16px;line-height:1.7;color:#5A5A5A;max-width:48ch;text-wrap:pretty;">Da nitidez da tela à resistência à água, cada recurso foi pensado para o uso real, dentro e fora do treino.</p>
+      </div>
+      <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px;">
+        <div style="background:#090909;overflow:hidden;"><img src="assets/chatgpt-image-10-de-jul-de-2026-22-55-39.jpg" alt="Tela AMOLED HD de 1,43 polegadas com Always-On" loading="lazy" style="width:100%;height:auto;" /></div>
+        <div style="background:#090909;overflow:hidden;"><img src="assets/chatgpt-image-10-de-jul-de-2026-22-53-43.jpg" alt="Resistência à água 3ATM" loading="lazy" style="width:100%;height:auto;" /></div>
+        <div style="background:#090909;overflow:hidden;"><img src="assets/chatgpt-image-10-de-jul-de-2026-22-53-39.jpg" alt="Bateria de até 7 dias e carregamento magnético" loading="lazy" style="width:100%;height:auto;" /></div>
+        <div style="background:#090909;overflow:hidden;"><img src="assets/chatgpt-image-10-de-jul-de-2026-22-53-46.jpg" alt="Mais de 100 mostradores personalizáveis" loading="lazy" style="width:100%;height:auto;" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1360px;margin:0 auto;padding:clamp(56px,7vw,100px) 20px;">
+    <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;">
+      <div style="max-width:600px;">
+        <p style="margin:0 0 16px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;color:#E30613;">DUAS VARIANTES</p>
+        <h2 style="margin:0;font-size:clamp(28px,4vw,46px);line-height:1.06;font-weight:900;letter-spacing:-.035em;text-wrap:balance;">Preto para a rua. Titanium para o resto.</h2>
+      </div>
+      <button onClick="{{ topo }}" style="background:none;font-size:12px;font-weight:800;letter-spacing:.12em;border-bottom:2px solid #E30613;padding:0 0 5px;color:#090909;" style-hover="color:#E30613;">ESCOLHER A MINHA COR</button>
+    </div>
+    <div style="margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:20px;">
+      <div style="display:flex;flex-direction:column;">
+        <div style="background:#F4F4F4;aspect-ratio:1/1;overflow:hidden;position:relative;">
+          <img src="assets/chatgpt-image-10-de-jul-de-2026-23-21-48.jpg" alt="SmartWatch na cor Preto" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.3,1);" style-hover="transform:scale(1.05);" />
+          <span style="position:absolute;top:14px;left:14px;background:#090909;color:#fff;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;padding:6px 10px;">PRETO</span>
+        </div>
+        <h3 style="margin:18px 0 8px;font-size:15px;font-weight:900;letter-spacing:.1em;">PRETO</h3>
+        <p style="margin:0;font-size:14px;color:#6B6B6B;line-height:1.6;">Caixa escura com detalhes em vermelho. Acompanha pulseira esportiva e pulseira de nylon.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;">
+        <div style="background:#F4F4F4;aspect-ratio:1/1;overflow:hidden;position:relative;">
+          <img src="assets/chatgpt-image-10-de-jul-de-2026-22-58-24.jpg" alt="SmartWatch na cor Titanium" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.3,1);" style-hover="transform:scale(1.05);" />
+          <span style="position:absolute;top:14px;left:14px;background:#fff;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;padding:6px 10px;">TITANIUM</span>
+        </div>
+        <h3 style="margin:18px 0 8px;font-size:15px;font-weight:900;letter-spacing:.1em;">TITANIUM</h3>
+        <p style="margin:0;font-size:14px;color:#6B6B6B;line-height:1.6;">Acabamento claro com aro dourado. Acompanha pulseira esportiva e pulseira de nylon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#090909;color:#fff;">
+    <div style="max-width:1360px;margin:0 auto;padding:clamp(48px,6vw,88px) 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:clamp(24px,3vw,40px);align-items:center;">
+      <div style="background:#141414;aspect-ratio:1/1;overflow:hidden;">
+        <img src="assets/chatgpt-image-17-de-jul-de-2026-20-40-40-1.jpg" alt="SmartWatch em uso no pedal" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.3,1);" style-hover="transform:scale(1.05);" />
+      </div>
+      <div style="background:#141414;aspect-ratio:1/1;overflow:hidden;">
+        <img src="assets/chatgpt-image-17-de-jul-de-2026-20-44-50.jpg" alt="SmartWatch na mesa de trabalho" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.3,1);" style-hover="transform:scale(1.05);" />
+      </div>
+      <div>
+        <p style="margin:0 0 16px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;color:#E30613;">NA PRÁTICA</p>
+        <h2 style="margin:0;font-size:clamp(24px,3vw,34px);line-height:1.1;font-weight:900;letter-spacing:-.03em;text-wrap:balance;">Do treino da manhã à reunião das duas.</h2>
+        <p style="margin:18px 0 0;font-size:15px;line-height:1.7;color:#B5B5B5;text-wrap:pretty;">Troque a pulseira, troque o mostrador e o mesmo relógio muda de contexto sem parecer deslocado.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1360px;margin:0 auto;padding:clamp(56px,7vw,100px) 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(32px,5vw,72px);">
+    <div>
+      <p style="margin:0 0 16px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;color:#E30613;">DESCRIÇÃO</p>
+      <h2 style="margin:0;font-size:clamp(28px,4vw,46px);line-height:1.06;font-weight:900;letter-spacing:-.035em;text-wrap:balance;">Mais do que um relógio.</h2>
+      <div style="margin-top:28px;background:#F4F4F4;aspect-ratio:1/1;overflow:hidden;">
+        <img src="assets/chatgpt-image-17-de-jul-de-2026-21-01-22.jpg" alt="Perfil lateral do SmartWatch" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;max-width:60ch;">
+      <p style="margin:0;font-size:16px;line-height:1.75;color:#3A3A3A;text-wrap:pretty;">O SmartWatch GPS 1.43” foi pensado para quem quer as informações do dia no pulso, sem depender do celular a cada notificação. A tela AMOLED de 1,43” entrega leitura confortável no sol e no escuro, e o modo Always-On mantém a hora sempre visível.</p>
+      <p style="margin:0;font-size:16px;line-height:1.75;color:#3A3A3A;text-wrap:pretty;">Com GPS integrado, você registra a rota da corrida, da caminhada ou do pedal direto no relógio. A conexão Bluetooth permite atender e fazer chamadas pelo próprio aparelho, e a Alexa integrada resolve lembrete, alarme e consulta rápida por voz.</p>
+      <p style="margin:0;font-size:16px;line-height:1.75;color:#3A3A3A;text-wrap:pretty;">A resistência 3ATM cobre chuva, suor e lavagem de mãos, e a bateria entrega até 7 dias de uso típico, com recarga magnética que encaixa sozinha. Nas versões Preto e Titanium, o relógio acompanha duas pulseiras: a esportiva perfurada e a de nylon.</p>
+      <div style="margin-top:14px;border-top:1px solid #E9E9E9;">
+        <sc-for list="{{ specs }}" as="sp" hint-placeholder-count="12">
+          <div style="display:flex;justify-content:space-between;gap:20px;padding:15px 0;border-bottom:1px solid #E9E9E9;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;color:#8A8A8A;">{{ sp.k }}</span>
+            <span style="font-size:14px;font-weight:700;text-align:right;">{{ sp.v }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#F4F4F4;">
+    <div style="max-width:1360px;margin:0 auto;padding:clamp(56px,7vw,100px) 20px;">
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;">
+        <div>
+          <p style="margin:0 0 16px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;color:#E30613;">AVALIAÇÕES</p>
+          <h2 style="margin:0;font-size:clamp(28px,4vw,46px);line-height:1.06;font-weight:900;letter-spacing:-.035em;">Quem escolheu, conta.</h2>
+        </div>
+        <div style="display:flex;align-items:center;gap:16px;background:#fff;padding:18px 24px;">
+          <span style="font-size:38px;font-weight:900;letter-spacing:-.03em;line-height:1;">{{ nota }}</span>
+          <span style="display:flex;flex-direction:column;gap:4px;">
+            <span style="color:#E30613;font-size:14px;letter-spacing:.08em;">★★★★★</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#8A8A8A;letter-spacing:.1em;">{{ totalAvaliacoes }} AVALIAÇÕES</span>
+          </span>
+        </div>
+      </div>
+
+      <div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:8px;">
+        <sc-for list="{{ filters }}" as="f" hint-placeholder-count="4">
+          <button onClick="{{ f.select }}" style="background:{{ f.bg }};color:{{ f.fg }};border:1.5px solid {{ f.border }};font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;padding:11px 18px;transition:all .18s;" style-hover="border-color:#090909;">{{ f.label }}</button>
+        </sc-for>
+      </div>
+
+      <div style="margin-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px;">
+        <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="9">
+          <div style="background:#fff;display:flex;flex-direction:column;transition:transform .25s;" style-hover="transform:translateY(-3px);">
+            <div style="background:#EDEDED;aspect-ratio:1/1;overflow:hidden;">
+              <img src="{{ r.photo }}" alt="Foto de cliente com o SmartWatch" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.3,1);" style-hover="transform:scale(1.05);" />
+            </div>
+            <div style="padding:22px;display:flex;flex-direction:column;gap:12px;flex:1;">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;">
+                <span style="color:#E30613;font-size:13px;letter-spacing:.08em;">{{ r.stars }}</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#B0B0B0;letter-spacing:.08em;">{{ r.meta }}</span>
+              </div>
+              <p style="margin:0;font-size:15px;line-height:1.6;color:#3A3A3A;text-wrap:pretty;">“{{ r.text }}”</p>
+              <div style="margin-top:auto;display:flex;flex-direction:column;gap:3px;padding-top:14px;border-top:1px solid #EFEFEF;">
+                <strong style="font-size:13px;">— {{ r.name }}</strong>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#8A8A8A;letter-spacing:.08em;">COMPRA VERIFICADA</span>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <sc-if value="{{ temMais }}" hint-placeholder-val="{{ true }}">
+        <div style="margin-top:28px;display:flex;justify-content:center;">
+          <button onClick="{{ verMais }}" style="background:#fff;border:1.5px solid #090909;color:#090909;font-size:12px;font-weight:800;letter-spacing:.12em;padding:18px 34px;transition:background .2s,color .2s;" style-hover="background:#090909;color:#fff;">VER MAIS AVALIAÇÕES</button>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid #EDEDED;">
+    <div style="max-width:900px;margin:0 auto;padding:clamp(56px,7vw,96px) 20px;">
+      <p style="margin:0 0 16px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;color:#E30613;">SUPORTE</p>
+      <h2 style="margin:0 0 36px;font-size:clamp(26px,3.4vw,40px);font-weight:900;letter-spacing:-.03em;">Perguntas frequentes</h2>
+      <div style="border-top:1px solid #E9E9E9;">
+        <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="8">
+          <div style="border-bottom:1px solid #E9E9E9;">
+            <button onClick="{{ f.toggle }}" style="width:100%;background:none;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 4px;text-align:left;font-size:16px;font-weight:700;color:#090909;transition:color .2s;" style-hover="color:#E30613;">
+              {{ f.q }}
+              <span style="flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:{{ f.iconBg }};color:{{ f.iconFg }};display:flex;align-items:center;justify-content:center;font-size:15px;transition:all .2s;">{{ f.icon }}</span>
+            </button>
+            <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+              <p style="margin:0;padding:0 4px 24px;font-size:15px;line-height:1.7;color:#6B6B6B;max-width:70ch;animation:revealUp .28s ease both;">{{ f.a }}</p>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ showMobileBar }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid #E6E6E6;box-shadow:0 -8px 24px rgba(0,0,0,.1);padding:11px 14px;display:flex;align-items:center;gap:12px;animation:revealUp .3s ease both;">
+      <span style="display:flex;flex-direction:column;line-height:1.15;flex:0 0 auto;">
+        <span style="font-size:19px;font-weight:900;letter-spacing:-.02em;">{{ precoPor }}</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#8A8A8A;letter-spacing:.06em;">{{ precoPix }} NO PIX</span>
+      </span>
+      <button onClick="{{ buyNow }}" style="flex:1;background:#E30613;color:#fff;font-size:14px;font-weight:900;letter-spacing:.1em;padding:17px 12px;">COMPRAR AGORA</button>
+    </div>
+  </sc-if>
+
+</main>
+
+<dc-import name="Footer" hint-size="100%,560px"></dc-import>
+
+<sc-if value="{{ lightbox }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeLightbox }}" style="position:fixed;inset:0;z-index:100;background:rgba(9,9,9,.94);display:flex;align-items:center;justify-content:center;padding:24px;animation:fadeIn .2s ease;">
+    <button onClick="{{ closeLightbox }}" style="position:absolute;top:20px;right:22px;background:none;color:#fff;font-size:30px;line-height:1;">×</button>
+    <button onClick="{{ prev }}" style="position:absolute;left:16px;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:18px;">‹</button>
+    <img src="{{ mainSrc }}" alt="SmartWatch ampliado" style="max-width:min(900px,92vw);max-height:84vh;object-fit:contain;background:#fff;" />
+    <button onClick="{{ next }}" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:18px;">›</button>
+    <span style="position:absolute;bottom:22px;left:50%;transform:translateX(-50%);color:#fff;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;">{{ counter }}</span>
+  </div>
+</sc-if>
+
+<sc-if value="{{ cartOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeCart }}" style="position:fixed;inset:0;z-index:110;background:rgba(9,9,9,.5);animation:fadeIn .2s ease;">
+    <aside onClick="{{ stop }}" style="position:absolute;top:0;right:0;bottom:0;width:min(420px,92vw);background:#fff;display:flex;flex-direction:column;animation:drawerIn .3s cubic-bezier(.2,.7,.3,1) both;">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:22px 24px;border-bottom:1px solid #EDEDED;">
+        <span style="font-size:13px;font-weight:900;letter-spacing:.14em;">SEU CARRINHO (1)</span>
+        <button onClick="{{ closeCart }}" style="background:none;font-size:26px;line-height:1;">×</button>
+      </div>
+      <div style="flex:1;overflow:auto;padding:24px;">
+        <div style="display:flex;gap:16px;">
+          <div style="flex:0 0 auto;width:96px;height:96px;background:#F4F4F4;overflow:hidden;">
+            <img src="{{ mainSrc }}" alt="SmartWatch GPS" style="width:100%;height:100%;object-fit:cover;" />
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;flex:1;">
+            <strong style="font-size:14px;line-height:1.35;">SmartWatch GPS 1.43” AMOLED com Bluetooth e Alexa</strong>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#8A8A8A;letter-spacing:.06em;">COR {{ variante }} • QTD 1</span>
+            <span style="font-size:15px;font-weight:900;margin-top:4px;">{{ precoPor }}</span>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #EDEDED;padding:22px 24px;display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;color:#6B6B6B;">SUBTOTAL</span>
+          <span style="font-size:20px;font-weight:900;">{{ precoPor }}</span>
+        </div>
+        <p style="margin:0;font-size:12px;color:#8A8A8A;">{{ precoPix }} pagando no PIX (7% OFF)</p>
+        <button onClick="{{ buyNow }}" style="width:100%;background:#E30613;color:#fff;font-size:14px;font-weight:900;letter-spacing:.12em;padding:19px;transition:background .2s;" style-hover="background:#B0000A;">IR PARA PAGAMENTO</button>
+        <button onClick="{{ closeCart }}" style="width:100%;background:none;font-size:12px;font-weight:700;letter-spacing:.1em;color:#6B6B6B;padding:4px;">CONTINUAR COMPRANDO</button>
+      </div>
+    </aside>
+  </div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;precoDe&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;R$ 349,90&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Preço&quot;},&quot;precoPor&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;R$ 129,90&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Preço&quot;},&quot;parcelas&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:12,&quot;min&quot;:1,&quot;max&quot;:18,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Preço&quot;},&quot;nota&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;4,9&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Avaliações&quot;},&quot;mostrarNota&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Avaliações&quot;},&quot;estoque&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Disponibilidade: Em estoque&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Produto&quot;}}">
+class Component extends DCLogic {
+  state = { i: 0, vw: 1440, sy: 0, variante: 'Preto', lightbox: false, cartOpen: false, faq: -1, filter: 'TODAS', visiveis: 12 };
+
+  GAL = {
+    'Preto': [
+      { src: 'assets/chatgpt-image-10-de-jul-de-2026-23-21-48.jpg', alt: 'SmartWatch Preto com as duas pulseiras' },
+      { src: 'assets/chatgpt-image-17-de-jul-de-2026-20-58-28-1.jpg', alt: 'Mostrador AMOLED em detalhe' },
+      { src: 'assets/chatgpt-image-17-de-jul-de-2026-21-01-22.jpg', alt: 'Perfil lateral com coroa e botão' },
+      { src: 'assets/chatgpt-image-17-de-jul-de-2026-20-58-25.jpg', alt: 'Carregamento magnético' },
+      { src: 'assets/chatgpt-image-17-de-jul-de-2026-20-47-09.jpg', alt: 'Fivela da pulseira esportiva' },
+      { src: 'assets/chatgpt-image-10-de-jul-de-2026-22-55-39.jpg', alt: 'Tela AMOLED de 1,43 polegadas' }
+    ],
+    'Titanium': [
+      { src: 'assets/chatgpt-image-10-de-jul-de-2026-22-58-24.jpg', alt: 'SmartWatch Titanium com as duas pulseiras' },
+      { src: 'assets/chatgpt-image-17-de-jul-de-2026-20-44-50.jpg', alt: 'SmartWatch Titanium na mesa de trabalho' },
+      { src: 'assets/chatgpt-image-17-de-jul-de-2026-20-40-40-1.jpg', alt: 'SmartWatch Titanium em uso no pedal' },
+      { src: 'assets/chatgpt-image-10-de-jul-de-2026-22-53-43.jpg', alt: 'Resistência à água 3ATM' },
+      { src: 'assets/chatgpt-image-10-de-jul-de-2026-22-53-39.jpg', alt: 'Bateria de até 7 dias' },
+      { src: 'assets/chatgpt-image-10-de-jul-de-2026-22-53-46.jpg', alt: 'Mostradores personalizáveis' }
+    ]
+  };
+
+  SWATCH = { 'Preto': '#141414', 'Titanium': '#DED6C8' };
+  SKU = { 'Preto': 'BLK', 'Titanium': 'TTN' };
+
+  FAQ = [
+    { q: 'O relógio faz e recebe chamadas?', a: 'Sim. Com o Bluetooth conectado ao celular, você atende e faz chamadas pelo próprio relógio, usando o alto-falante e o microfone integrados.' },
+    { q: 'A Alexa funciona sem o celular por perto?', a: 'A Alexa integrada usa a conexão do celular pareado. Com o aparelho por perto e conectado, você usa os comandos de voz direto no pulso.' },
+    { q: 'Posso usar na chuva ou no banho?', a: 'A resistência é 3ATM, que cobre chuva, suor e lavagem de mãos. Não é indicado para banho quente, sauna ou mergulho.' },
+    { q: 'Quanto dura a bateria?', a: 'Até 7 dias em uso típico e cerca de 12 horas em rastreamento ao ar livre com GPS ativo. A duração varia conforme o brilho da tela e os recursos ativados.' },
+    { q: 'É compatível com Android e iPhone?', a: 'Sim, o relógio funciona com o aplicativo GloryFit Pro, disponível para Android e iOS. [Confirme aqui as versões mínimas de sistema.]' },
+    { q: 'Quantas pulseiras acompanham o produto?', a: 'Cada unidade acompanha duas pulseiras: a esportiva em silicone perfurado e a de nylon. [Confirme aqui o conteúdo exato da caixa.]' },
+    { q: 'Posso trocar o mostrador da tela?', a: 'Sim. São mais de 100 mostradores disponíveis no aplicativo, e você também pode personalizar com fotos e vídeos do próprio álbum.' },
+    { q: 'O produto tem garantia?', a: '[Editável] Informe aqui o prazo de garantia contra defeito de fabricação praticado pela loja.' },
+    { q: 'Como funciona o envio?', a: 'Todos os pedidos são enviados com código de rastreamento, informado por e-mail e SMS. Os prazos estão na Política de entrega.' }
+  ];
+
+  REVIEWS = [
+    { r: 5, text: 'A tela AMOLED é linda, dá para ler no sol sem esforço nenhum.', name: 'Rodrigo A.', meta: 'Preto', photo: 'assets/pasted-1787607131670-0.jpg' },
+    { r: 5, text: 'Chegou muito bem embalado, com as duas pulseiras e o carregador certinhos.', name: 'Camila F.', meta: 'Titanium', photo: 'assets/pasted-1787607137447-0.jpg' },
+    { r: 5, text: 'O GPS pega rápido. Saio para correr e em menos de um minuto já está pronto.', name: 'Bruno S.', meta: 'Preto', photo: 'assets/pasted-1787607141969-0.jpg' },
+    { r: 5, text: 'Atender ligação pelo relógio virou rotina aqui. O áudio é claro dos dois lados.', name: 'Letícia M.', meta: 'Titanium', photo: 'assets/pasted-1787607148442-0.jpg' },
+    { r: 4, text: 'Bateria dura mesmo perto de uma semana no meu uso normal.', name: 'Fernando C.', meta: 'Preto', photo: 'assets/pasted-1787607152508-0.jpg' },
+    { r: 5, text: 'Coloquei o mostrador com foto minha e ficou lindo. Troco quase todo dia.', name: 'Aline P.', meta: 'Titanium', photo: 'assets/pasted-1787607156212-0.jpg' },
+    { r: 5, text: 'A pulseira de nylon é confortável para dormir e monitorar o sono.', name: 'Tiago R.', meta: 'Preto', photo: 'assets/pasted-1787607160867-0.jpg' },
+    { r: 5, text: 'O carregador magnético gruda sozinho, não tem erro para encaixar.', name: 'Priscila N.', meta: 'Titanium', photo: 'assets/pasted-1787607169387-0.jpg' },
+    { r: 4, text: 'Usei na esteira e a leitura de batimentos ficou próxima do aparelho da academia.', name: 'Marcelo V.', meta: 'Preto', photo: 'assets/pasted-1787607173559-0.jpg' },
+    { r: 5, text: 'O Always-On é o recurso que eu mais uso. Olho e já sei a hora.', name: 'Juliana B.', meta: 'Titanium', photo: 'assets/pasted-1787607177157-0.jpg' },
+    { r: 5, text: 'Acabamento muito melhor do que eu esperava pelo valor pago.', name: 'Gabriel T.', meta: 'Preto', photo: 'assets/pasted-1787607181365-0.jpg' },
+    { r: 5, text: 'Recebi antes do prazo e com rastreio funcionando desde o primeiro dia.', name: 'Renata L.', meta: 'Titanium', photo: 'assets/pasted-1787607185269-0.jpg' },
+    { r: 5, text: 'Uso no trabalho e na academia. Combina com os dois contextos.', name: 'Otávio D.', meta: 'Preto', photo: 'assets/pasted-1787607194980-0.jpg' },
+    { r: 5, text: 'A caixa vem completa e bem organizada, parece produto de marca grande.', name: 'Sabrina K.', meta: 'Titanium', photo: 'assets/pasted-1787607203236-0.jpg' },
+    { r: 5, text: 'As notificações chegam na hora, sem atraso nenhum.', name: 'Eduardo H.', meta: 'Preto', photo: 'assets/pasted-1787607206462-0.jpg' },
+    { r: 5, text: 'Peguei a versão clara e ficou elegante no pulso, discreto.', name: 'Mariana Q.', meta: 'Titanium', photo: 'assets/pasted-1787607210144-0.jpg' },
+    { r: 4, text: 'A resistência à água me deu tranquilidade. Peguei chuva e não deu nada.', name: 'Vinícius O.', meta: 'Preto', photo: 'assets/pasted-1787607215427-0.jpg' },
+    { r: 5, text: 'O monitoramento de sono é detalhado, mostra as fases direitinho.', name: 'Daniela G.', meta: 'Titanium', photo: 'assets/pasted-1787607218797-0.jpg' },
+    { r: 5, text: 'A coroa gira suave e ajuda a navegar sem sujar a tela.', name: 'Anderson P.', meta: 'Preto', photo: 'assets/pasted-1787607221973-0.jpg' },
+    { r: 5, text: 'Carrega rápido. Em pouco tempo já estava com boa parte da bateria.', name: 'Larissa F.', meta: 'Titanium', photo: 'assets/pasted-1787607225638-0.jpg' },
+    { r: 4, text: 'Comprei de presente e a pessoa amou. Chegou no prazo combinado.', name: 'Thiago N.', meta: 'Preto', photo: 'assets/pasted-1787607229172-0.jpg' },
+    { r: 5, text: 'A tela é grande sem ficar pesado no pulso, ficou equilibrado.', name: 'Beatriz H.', meta: 'Titanium', photo: 'assets/pasted-1787607233692-0.jpg' },
+    { r: 5, text: 'A leitura de passos bate com a do celular, achei confiável.', name: 'Caio M.', meta: 'Preto', photo: 'assets/pasted-1787607237724-0.jpg' },
+    { r: 5, text: 'Uso para acompanhar o pedal e a distância no GPS ficou precisa.', name: 'Natália Q.', meta: 'Titanium', photo: 'assets/pasted-1787607241467-0.jpg' },
+    { r: 5, text: 'O suporte respondeu rápido quando perguntei sobre o aplicativo.', name: 'Rogério S.', meta: 'Preto', photo: 'assets/pasted-1787607244875-0.jpg' },
+    { r: 5, text: 'A pulseira esportiva é macia e não irrita a pele nem no calor.', name: 'Patrícia O.', meta: 'Titanium', photo: 'assets/pasted-1787607248524-0.jpg' },
+    { r: 5, text: 'Consigo ver mensagem sem tirar o celular do bolso. Resolveu meu dia a dia.', name: 'Gustavo E.', meta: 'Preto', photo: 'assets/pasted-1787607251938-0.jpg' },
+    { r: 5, text: 'Modelo bonito de perto, o aro tem um acabamento bem feito.', name: 'Sara M.', meta: 'Titanium', photo: 'assets/pasted-1787607255396-0.jpg' },
+    { r: 4, text: 'Já é o segundo que compro na loja. Padrão de qualidade mantido.', name: 'Henrique Z.', meta: 'Preto', photo: 'assets/pasted-1787607260812-0.jpg' },
+    { r: 5, text: 'Vale muito o que custa. Tem recurso de relógio bem mais caro.', name: 'Tatiane R.', meta: 'Titanium' },
+    { r: 5, text: 'Configurei em poucos minutos pelo app, foi simples.', name: 'Marcos J.', meta: 'Preto' },
+    { r: 5, text: 'A vibração é firme, não perco notificação nem no barulho.', name: 'Isabela T.', meta: 'Titanium' },
+    { r: 4, text: 'Uso no volante e consigo ver quem está ligando sem soltar a direção.', name: 'Felipe C.', meta: 'Preto' },
+    { r: 5, text: 'Ótimo para quem quer acompanhar treino sem levar o celular.', name: 'Vanessa M.', meta: 'Titanium' },
+    { r: 5, text: 'Chegou lacrado e com tudo conferido dentro da caixa.', name: 'Sérgio B.', meta: 'Preto' },
+    { r: 5, text: 'A opção de trocar pulseira muda completamente o visual do relógio.', name: 'Débora N.', meta: 'Titanium' },
+    { r: 5, text: 'A qualidade da tela chama atenção de quem vê no meu pulso.', name: 'Leandro X.', meta: 'Preto' },
+    { r: 5, text: 'Meu filho pediu e não tira mais do braço. Bem resistente ao uso.', name: 'Carolina A.', meta: 'Titanium' },
+    { r: 5, text: 'A contagem de calorias no treino ajudou bastante na rotina.', name: 'Matheus P.', meta: 'Preto' },
+    { r: 5, text: 'Fácil de limpar e não marca com facilidade.', name: 'Bianca L.', meta: 'Titanium' },
+    { r: 4, text: 'O brilho automático funciona bem, ajusta sozinho no ambiente escuro.', name: 'Wesley C.', meta: 'Preto' },
+    { r: 5, text: 'Comprei sem conhecer a loja e fui muito bem atendido do início ao fim.', name: 'Amanda V.', meta: 'Titanium' },
+    { r: 5, text: 'A entrega foi mais rápida que o prazo informado no site.', name: 'Pedro H.', meta: 'Preto' },
+    { r: 5, text: 'O relógio é leve, esqueço que estou usando durante o dia.', name: 'Letícia S.', meta: 'Titanium' },
+    { r: 4, text: 'Boa integração com o celular, sincroniza sem travar.', name: 'Fábio G.', meta: 'Preto' },
+    { r: 5, text: 'O modo esportivo tem várias opções, uso corrida e caminhada.', name: 'Milena F.', meta: 'Titanium' },
+    { r: 5, text: 'Ficou perfeito no meu pulso, nem grande nem pequeno.', name: 'Alan P.', meta: 'Preto' },
+    { r: 5, text: 'A embalagem chegou íntegra, sem nenhum amassado.', name: 'Raquel C.', meta: 'Titanium' },
+    { r: 5, text: 'Uso desde que chegou e continua com a tela impecável.', name: 'Nathan V.', meta: 'Preto' },
+    { r: 5, text: 'A leitura de batimentos em repouso é estável, sem variação estranha.', name: 'Simone A.', meta: 'Titanium' }
+  ];
+
+  componentDidMount() {
+    this.onResize = () => this.setState({ vw: window.innerWidth });
+    this.onScroll = () => this.setState({ sy: window.scrollY });
+    window.addEventListener('resize', this.onResize);
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    this.onResize();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('scroll', this.onScroll);
+  }
+
+  parse(v) {
+    const n = parseFloat(String(v).replace(/[^\d,.-]/g, '').replace(/\./g, '').replace(',', '.'));
+    return isNaN(n) ? 0 : n;
+  }
+  brl(n) { return 'R$ ' + n.toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
+
+  CHECKOUT = {
+    'Preto': 'https://pagamento.santinsimports.com/checkout?product=d5017075-a012-11f1-a1eb-46da4690ad53',
+    'Titanium': 'https://pagamento.santinsimports.com/checkout?product=3a830e39-a013-11f1-a1eb-46da4690ad53'
+  };
+
+  irCheckout() {
+    const url = this.CHECKOUT[this.state.variante];
+    if (!url) return this.setState({ cartOpen: true });
+    this.setState({ menuOpen: false, cartOpen: false });
+    window.location.href = url;
+  }
+
+  renderVals() {
+    const p = this.props;
+    const precoDe = p.precoDe ?? 'R$ 349,90';
+    const precoPor = p.precoPor ?? 'R$ 129,90';
+    const parcelas = p.parcelas ?? 12;
+    const nDe = this.parse(precoDe), nPor = this.parse(precoPor);
+    const desconto = nDe > 0 ? Math.round((1 - nPor / nDe) * 100) : 0;
+    const gal = this.GAL[this.state.variante];
+    const i = Math.min(this.state.i, gal.length - 1);
+    const isMobile = this.state.vw < 900;
+    const lista = this.REVIEWS.filter(r => this.state.filter === 'TODAS' || r.r === parseInt(this.state.filter, 10));
+
+    return {
+      isMobile,
+      isDesktop: !isMobile,
+      clientesTitulo: p.clientesTitulo ?? '+ de 20.000 clientes satisfeitos',
+      clientes: [
+        { src: 'assets/pasted-1787270594212-0-2.jpg', alt: 'Cliente Santins Imports recebendo o pedido', text: 'Comprei dois pares na Santins e a experiência foi ótima. Chegou certinho e o atendimento acompanhou tudo.', name: 'BRUNO' },
+        { src: 'assets/pasted-1787270599474-0-2.jpg', alt: 'Cliente Santins Imports com a caixa em mãos', text: 'Melhor loja de sneakers em que já comprei, sem dúvidas.', name: 'MC CAVEIRINHA' },
+        { src: 'assets/bf8fc1ec-e684-444f-ba47-da731876e3d3-27d409b3-2.jpg', alt: 'Cliente Santins Imports na loja', text: 'Fiquei muito satisfeito com a compra. Produto em perfeito estado e qualidade impecável.', name: 'ALIFER' },
+        { src: 'assets/chatgpt-image-20-de-ago-de-2026-21-39-03-dff3.jpg', alt: 'Cliente Santins Imports na loja física', text: 'Virou minha referência para encontrar o que é difícil. Não podia estar mais satisfeito.', name: 'GABRIEL' }
+      ],
+      precoDe, precoPor, parcelas,
+      precoPix: this.brl(nPor * 0.93),
+      parcelaValor: this.brl(nPor / parcelas),
+      descontoLabel: desconto > 0 ? desconto + '% OFF' : 'OFERTA',
+      nota: p.nota ?? '4,9',
+      mostrarNota: p.mostrarNota ?? true,
+      totalAvaliacoes: this.REVIEWS.length,
+      totalFotos: p.totalFotos ?? 29,
+      estoqueLabel: p.estoque ?? 'Disponibilidade: Em estoque',
+      variante: this.state.variante,
+      skuVar: this.SKU[this.state.variante],
+      mainSrc: gal[i].src,
+      counter: (i + 1) + ' / ' + gal.length,
+      imgs: gal.map((im, idx) => ({
+        src: im.src, alt: im.alt,
+        border: idx === i ? '#E30613' : '#E6E6E6',
+        select: () => this.setState({ i: idx })
+      })),
+      variantes: ['Preto', 'Titanium'].map(nome => ({
+        nome,
+        thumb: this.GAL[nome][0].src,
+        bg: this.state.variante === nome ? '#090909' : '#fff',
+        fg: this.state.variante === nome ? '#fff' : '#090909',
+        border: this.state.variante === nome ? '#090909' : '#E0E0E0',
+        select: () => this.setState({ variante: nome, i: 0 })
+      })),
+      specs: [
+        { k: 'MODELO', v: 'SmartWatch GPS 1.43” AMOLED' },
+        { k: 'TELA', v: '1,43” AMOLED HD com Always-On' },
+        { k: 'CORES', v: 'Preto / Titanium' },
+        { k: 'CONECTIVIDADE', v: 'Bluetooth (chamadas e notificações)' },
+        { k: 'ASSISTENTE', v: 'Alexa integrada' },
+        { k: 'LOCALIZAÇÃO', v: 'GPS integrado' },
+        { k: 'RESISTÊNCIA', v: '3ATM' },
+        { k: 'BATERIA', v: 'Até 7 dias · 12 h com GPS ativo' },
+        { k: 'CARREGAMENTO', v: 'Magnético' },
+        { k: 'APLICATIVO', v: 'GloryFit Pro (Android e iOS)' },
+        { k: 'MOSTRADORES', v: '+100 personalizáveis' },
+        { k: 'ACOMPANHA', v: 'Pulseira esportiva e pulseira de nylon' },
+        { k: 'GÊNERO', v: 'Unissex' },
+        { k: 'GARANTIA', v: '[Editável]' },
+        { k: 'ORIGEM', v: '[Editável]' }
+      ],
+      filters: ['TODAS', '5 ESTRELAS', '4 ESTRELAS', '3 ESTRELAS'].map(label => ({
+        label,
+        bg: this.state.filter === label ? '#090909' : '#fff',
+        fg: this.state.filter === label ? '#fff' : '#090909',
+        border: this.state.filter === label ? '#090909' : '#E0E0E0',
+        select: () => this.setState({ filter: label, visiveis: 12 })
+      })),
+      reviews: lista.slice(0, this.state.visiveis).map(r => ({
+        text: r.text, name: r.name, meta: r.meta, photo: r.photo,
+        stars: '★★★★★'.slice(0, r.r) + '☆☆☆☆☆'.slice(0, 5 - r.r)
+      })),
+      temMais: this.state.visiveis < lista.length,
+      verMais: () => this.setState({ visiveis: this.state.visiveis + 12 }),
+      faqs: this.FAQ.map((f, idx) => ({
+        q: f.q, a: f.a,
+        open: this.state.faq === idx,
+        icon: this.state.faq === idx ? '−' : '+',
+        iconBg: this.state.faq === idx ? '#E30613' : '#F4F4F4',
+        iconFg: this.state.faq === idx ? '#fff' : '#090909',
+        toggle: () => this.setState({ faq: this.state.faq === idx ? -1 : idx })
+      })),
+      showMobileBar: isMobile && this.state.sy > 520,
+      lightbox: this.state.lightbox,
+      cartOpen: this.state.cartOpen,
+      prev: (e) => { if (e) e.stopPropagation(); this.setState({ i: (i - 1 + gal.length) % gal.length }); },
+      next: (e) => { if (e) e.stopPropagation(); this.setState({ i: (i + 1) % gal.length }); },
+      openLightbox: () => this.setState({ lightbox: true }),
+      closeLightbox: () => this.setState({ lightbox: false }),
+      closeCart: () => this.setState({ cartOpen: false }),
+      addToCart: () => this.irCheckout(),
+      buyNow: () => this.irCheckout(),
+      topo: () => window.scrollTo({ top: 0, behavior: 'smooth' }),
+      stop: (e) => e.stopPropagation(),
+      onTouchStart: (e) => { this.tx = e.touches[0].clientX; },
+      onTouchEnd: (e) => {
+        if (this.tx == null) return;
+        const dx = e.changedTouches[0].clientX - this.tx;
+        if (Math.abs(dx) > 40) this.setState({ i: (i + (dx < 0 ? 1 : gal.length - 1)) % gal.length });
+        this.tx = null;
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

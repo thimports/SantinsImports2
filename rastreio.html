@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Rastrear pedido | Santins Imports</title>
+<meta name="description" content="Acompanhe o status do seu pedido Santins Imports com o código de rastreamento." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Archivo, Helvetica, sans-serif; color: #090909; background: #fff; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  img { display: block; max-width: 100%; }
+  button { font-family: inherit; cursor: pointer; border: 0; }
+  a { color: #090909; text-decoration: none; }
+  a:hover { color: #E30613; }
+  ::selection { background: #E30613; color: #fff; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { max-width: 100vw; }
+  img, video { max-width: 100%; }
+  h1, h2, h3, p, span, strong, a, li, button { overflow-wrap: anywhere; }
+  @media (max-width: 640px) {
+    input, select, textarea { font-size: 16px; }
+  }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+</style>
+</helmet>
+
+<dc-import name="Header" hint-size="100%,150px"></dc-import>
+
+<main style="width:100%;overflow-x:hidden;">
+  <section style="background:#F4F4F4;">
+    <div style="max-width:1100px;margin:0 auto;padding:clamp(48px,6vw,88px) 20px;">
+      <div style="text-align:center;max-width:640px;margin:0 auto;">
+        <p style="margin:0 0 16px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;color:#E30613;">RASTREIO DO PEDIDO</p>
+        <h2 style="margin:0;font-size:clamp(26px,3.8vw,42px);line-height:1.06;font-weight:900;letter-spacing:-.035em;text-wrap:balance;">Acompanhe sua entrega do início ao fim</h2>
+        <p style="margin:18px 0 0;font-size:16px;line-height:1.7;color:#5A5A5A;text-wrap:pretty;">Assim que seu pedido for despachado, você recebe o código de rastreamento por e-mail e por SMS, no contato informado na compra.</p>
+      </div>
+
+      <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:18px;">
+        <div style="background:#fff;padding:28px;display:flex;flex-direction:column;gap:14px;transition:transform .25s;" style-hover="transform:translateY(-3px);">
+          <span style="width:42px;height:42px;background:#090909;display:flex;align-items:center;justify-content:center;flex:0 0 auto;">
+            <span style="display:block;width:18px;height:13px;border:2px solid #E30613;border-radius:2px;"></span>
+          </span>
+          <strong style="font-size:16px;letter-spacing:-.01em;">Código por e-mail</strong>
+          <p style="margin:0;font-size:14px;line-height:1.65;color:#6B6B6B;">Enviamos o código de rastreamento e o link da transportadora para o e-mail cadastrado no pedido.</p>
+        </div>
+        <div style="background:#fff;padding:28px;display:flex;flex-direction:column;gap:14px;transition:transform .25s;" style-hover="transform:translateY(-3px);">
+          <span style="width:42px;height:42px;background:#090909;display:flex;align-items:center;justify-content:center;flex:0 0 auto;">
+            <span style="display:block;width:12px;height:19px;border:2px solid #E30613;border-radius:3px;"></span>
+          </span>
+          <strong style="font-size:16px;letter-spacing:-.01em;">Aviso por SMS</strong>
+          <p style="margin:0;font-size:14px;line-height:1.65;color:#6B6B6B;">Você também recebe uma mensagem no celular informado, com o código para acompanhar a entrega.</p>
+        </div>
+        <div style="background:#fff;padding:28px;display:flex;flex-direction:column;gap:14px;transition:transform .25s;" style-hover="transform:translateY(-3px);">
+          <span style="width:42px;height:42px;background:#090909;display:flex;align-items:center;justify-content:center;flex:0 0 auto;">
+            <span style="display:block;width:14px;height:14px;border:2px solid #E30613;border-radius:50% 50% 50% 0;transform:rotate(-45deg);"></span>
+          </span>
+          <strong style="font-size:16px;letter-spacing:-.01em;">Acompanhamento completo</strong>
+          <p style="margin:0;font-size:14px;line-height:1.65;color:#6B6B6B;">Consulte o status a qualquer momento nesta página ou fale com o nosso suporte.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:32px;background:#090909;color:#fff;padding:clamp(26px,3.4vw,38px);border:2px solid #E30613;">
+        <span style="display:inline-block;background:#E30613;color:#fff;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.16em;padding:7px 12px;">ATENÇÃO — LEIA ANTES DE COMPRAR</span>
+        <h3 style="margin:20px 0 0;font-size:clamp(19px,2.4vw,26px);font-weight:900;letter-spacing:-.02em;text-wrap:balance;">Confira também a caixa de spam do seu e-mail.</h3>
+        <p style="margin:14px 0 0;font-size:15px;line-height:1.75;color:#C5C5C5;max-width:62ch;text-wrap:pretty;">Nossos e-mails de confirmação e de rastreamento podem cair na pasta de <strong style="color:#fff;">spam ou lixo eletrônico</strong>. Se não encontrar a mensagem na caixa de entrada, verifique essas pastas e marque o remetente como confiável para receber todas as atualizações do seu pedido.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:900px;margin:0 auto;padding:clamp(40px,5vw,80px) 20px;">
+    <h2 style="margin:0 0 28px;font-size:clamp(22px,3vw,32px);font-weight:900;letter-spacing:-.02em;">Etapas do pedido</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr));gap:1px;">
+      <sc-for list="{{ etapas }}" as="e" hint-placeholder-count="4">
+        <div style="border:1px solid #E9E9E9;padding:24px;">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:#E30613;">{{ e.n }}</span>
+          <h3 style="margin:10px 0 8px;font-size:14px;font-weight:900;letter-spacing:.06em;">{{ e.t }}</h3>
+          <p style="margin:0;font-size:13px;line-height:1.6;color:#6B6B6B;">{{ e.p }}</p>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="margin-top:44px;border-top:1px solid #E9E9E9;padding-top:32px;">
+      <h2 style="margin:0 0 18px;font-size:20px;font-weight:900;letter-spacing:-.01em;">Não recebeu o código?</h2>
+      <p style="margin:0 0 22px;font-size:15px;line-height:1.75;color:#4A4A4A;max-width:60ch;">O código é enviado após a postagem e pode levar algumas horas para começar a apresentar movimentação. [Informe o prazo médio praticado.] Se passar desse prazo, fale com o atendimento.</p>
+      <a href="contato.html" style="display:inline-block;background:#090909;color:#fff;font-size:12px;font-weight:800;letter-spacing:.12em;padding:17px 28px;transition:background .2s;" style-hover="background:#E30613;color:#fff;">FALAR COM O SUPORTE</a>
+    </div>
+  </section>
+</main>
+
+<dc-import name="Footer" hint-size="100%,560px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { enviado: false };
+  renderVals() {
+    return {
+      enviado: this.state.enviado,
+      consultar: () => this.setState({ enviado: true }),
+      etapas: [
+        { n: '01', t: 'PEDIDO CONFIRMADO', p: 'Pagamento aprovado e pedido registrado no sistema.' },
+        { n: '02', t: 'EM SEPARAÇÃO', p: 'Par conferido e embalado para envio.' },
+        { n: '03', t: 'ENVIADO', p: 'Pedido postado e código de rastreamento liberado.' },
+        { n: '04', t: 'ENTREGUE', p: 'Encomenda entregue no endereço informado.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

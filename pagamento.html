@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Formas de pagamento | Santins Imports</title>
+<meta name="description" content="PIX, cartão de crédito e boleto: formas de pagamento e condições de parcelamento na Santins Imports." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Archivo, Helvetica, sans-serif; color: #090909; background: #fff; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  img { display: block; max-width: 100%; }
+  button { font-family: inherit; cursor: pointer; border: 0; }
+  a { color: #090909; text-decoration: none; }
+  a:hover { color: #E30613; }
+  ::selection { background: #E30613; color: #fff; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { max-width: 100vw; }
+  img, video { max-width: 100%; }
+  h1, h2, h3, p, span, strong, a, li, button { overflow-wrap: anywhere; }
+  @media (max-width: 640px) {
+    input, select, textarea { font-size: 16px; }
+  }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+</style>
+</helmet>
+
+<dc-import name="Header" hint-size="100%,150px"></dc-import>
+
+<main style="width:100%;overflow-x:hidden;">
+  <section style="background:#090909;color:#fff;">
+    <div style="max-width:900px;margin:0 auto;padding:clamp(44px,5.5vw,84px) 20px;">
+      <p style="margin:0 0 16px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;color:#E30613;">PAGAMENTO</p>
+      <h1 style="margin:0;font-size:clamp(30px,4.4vw,52px);line-height:1.03;font-weight:900;letter-spacing:-.04em;">Formas de pagamento</h1>
+      <p style="margin:18px 0 0;font-size:16px;color:#B5B5B5;line-height:1.7;max-width:56ch;text-wrap:pretty;">Escolha como preferir pagar. Todas as transações são processadas em ambiente criptografado.</p>
+    </div>
+  </section>
+
+  <section style="max-width:900px;margin:0 auto;padding:clamp(40px,5vw,76px) 20px;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:18px;">
+      <div style="border:1.5px solid #090909;padding:28px;display:flex;flex-direction:column;gap:12px;">
+        <span style="align-self:flex-start;background:#E30613;color:#fff;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;padding:6px 10px;">7% OFF</span>
+        <strong style="font-size:18px;letter-spacing:-.02em;">PIX</strong>
+        <p style="margin:0;font-size:14px;line-height:1.7;color:#5A5A5A;">Aprovação imediata e desconto aplicado no checkout. O QR Code é gerado na finalização do pedido e tem validade limitada.</p>
+      </div>
+      <div style="border:1px solid #E9E9E9;padding:28px;display:flex;flex-direction:column;gap:12px;">
+        <span style="align-self:flex-start;background:#F4F4F4;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;padding:6px 10px;color:#6B6B6B;">ATÉ 12X</span>
+        <strong style="font-size:18px;letter-spacing:-.02em;">Cartão de crédito</strong>
+        <p style="margin:0;font-size:14px;line-height:1.7;color:#5A5A5A;">Visa, Mastercard, American Express e Elo. Parcelamento conforme as condições exibidas no checkout. [Informe aqui a partir de qual parcela há juros.]</p>
+      </div>
+      <div style="border:1px solid #E9E9E9;padding:28px;display:flex;flex-direction:column;gap:12px;">
+        <span style="align-self:flex-start;background:#F4F4F4;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;padding:6px 10px;color:#6B6B6B;">[EDITÁVEL]</span>
+        <strong style="font-size:18px;letter-spacing:-.02em;">Boleto bancário</strong>
+        <p style="margin:0;font-size:14px;line-height:1.7;color:#5A5A5A;">Compensação em até 3 dias úteis. O pedido é separado somente após a confirmação do pagamento pelo banco.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:44px;display:flex;flex-direction:column;gap:34px;">
+      <sc-for list="{{ blocos }}" as="b" hint-placeholder-count="6">
+        <div>
+          <h2 style="margin:0 0 12px;font-size:clamp(19px,2.2vw,24px);font-weight:900;letter-spacing:-.02em;">{{ b.t }}</h2>
+          <p style="margin:0;font-size:15px;line-height:1.8;color:#4A4A4A;max-width:66ch;text-wrap:pretty;">{{ b.p }}</p>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="margin-top:48px;background:#090909;color:#fff;padding:clamp(24px,3vw,34px);">
+      <h2 style="margin:0 0 10px;font-size:18px;font-weight:900;letter-spacing:-.01em;">Compra protegida</h2>
+      <p style="margin:0;font-size:15px;line-height:1.75;color:#C5C5C5;max-width:60ch;text-wrap:pretty;">Não armazenamos dados de cartão em nossos servidores. O processamento é feito pelo intermediador de pagamento, em conexão criptografada, e você recebe a confirmação por e-mail assim que a transação é aprovada.</p>
+    </div>
+  </section>
+</main>
+
+<dc-import name="Footer" hint-size="100%,560px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      blocos: [
+        { t: 'Desconto no PIX', p: 'O desconto de 7% é aplicado automaticamente ao escolher PIX como forma de pagamento e incide sobre o valor dos produtos. O prazo para pagamento do QR Code é informado na tela de finalização; após esse prazo o pedido é cancelado e o estoque liberado.' },
+        { t: 'Parcelamento no cartão', p: 'As opções de parcelamento e os valores de cada parcela aparecem no checkout antes da confirmação do pedido. [Informe aqui o número máximo de parcelas sem juros e a taxa aplicada nas demais.]' },
+        { t: 'Aprovação do pagamento', p: 'Pagamentos por PIX são identificados em minutos. No cartão, a aprovação depende da análise da operadora e pode levar algumas horas. O prazo de processamento e o prazo de entrega passam a contar a partir da aprovação.' },
+        { t: 'Pagamento recusado', p: 'Se o pagamento for recusado, verifique os dados informados, o limite disponível e eventuais bloqueios da sua operadora. Você pode repetir a compra escolhendo outra forma de pagamento ou falar com o nosso atendimento.' },
+        { t: 'Nota fiscal', p: 'Todos os pedidos são acompanhados de nota fiscal eletrônica, emitida em nome do titular informado na compra e enviada por e-mail. [Confirme aqui o regime de emissão adotado pela loja.]' },
+        { t: 'Reembolso', p: 'Em caso de cancelamento ou devolução aprovada, o reembolso é feito pelo mesmo meio utilizado na compra. Pagamentos por PIX são devolvidos na conta de origem; no cartão, o estorno segue o prazo da operadora. [Informe aqui os prazos praticados.]' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

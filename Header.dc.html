@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<div style="width:100%;background:#090909;color:#fff;overflow:hidden;">
+  <div style="display:flex;width:max-content;animation:marquee 34s linear infinite;">
+    <div style="display:flex;align-items:center;gap:44px;padding:9px 22px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;">
+      <span>ENVIO RASTREADO</span><span style="color:#E30613;">◆</span>
+      <span>COMPRA SEGURA</span><span style="color:#E30613;">◆</span>
+      <span>SUPORTE ESPECIALIZADO</span><span style="color:#E30613;">◆</span>
+      <span>ENVIO RASTREADO</span><span style="color:#E30613;">◆</span>
+      <span>COMPRA SEGURA</span><span style="color:#E30613;">◆</span>
+      <span>SUPORTE ESPECIALIZADO</span><span style="color:#E30613;">◆</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:44px;padding:9px 22px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;">
+      <span>ENVIO RASTREADO</span><span style="color:#E30613;">◆</span>
+      <span>COMPRA SEGURA</span><span style="color:#E30613;">◆</span>
+      <span>SUPORTE ESPECIALIZADO</span><span style="color:#E30613;">◆</span>
+      <span>ENVIO RASTREADO</span><span style="color:#E30613;">◆</span>
+      <span>COMPRA SEGURA</span><span style="color:#E30613;">◆</span>
+      <span>SUPORTE ESPECIALIZADO</span><span style="color:#E30613;">◆</span>
+    </div>
+  </div>
+</div>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid #E9E9E9;">
+  <div style="position:relative;max-width:1360px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:18px;">
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+      <button onClick="{{ toggleMenu }}" aria-label="Menu" style="background:none;padding:6px 8px 6px 0;display:flex;flex-direction:column;gap:4px;">
+        <span style="display:block;width:20px;height:2px;background:#090909;"></span>
+        <span style="display:block;width:20px;height:2px;background:#090909;"></span>
+        <span style="display:block;width:13px;height:2px;background:#E30613;"></span>
+      </button>
+    </sc-if>
+
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+      <a href="index.html" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;">
+        <img src="assets/pasted-1787273895487-0.jpg" alt="Santins Imports" style="height:68px;width:auto;object-fit:contain;" />
+      </a>
+    </sc-if>
+
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+      <a href="index.html" style="display:flex;align-items:center;flex-shrink:0;">
+        <img src="assets/pasted-1787273895487-0.jpg" alt="Santins Imports" style="height:clamp(52px,6.5vw,80px);width:auto;object-fit:contain;" />
+      </a>
+    </sc-if>
+
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+      <nav style="display:flex;align-items:center;gap:26px;margin-left:22px;font-size:12px;font-weight:700;letter-spacing:.11em;">
+        <a href="index.html" style="padding:4px 0;border-bottom:2px solid transparent;" style-hover="border-bottom:2px solid #E30613;">INÍCIO</a>
+        <a href="catalogo.html" style="padding:4px 0;border-bottom:2px solid transparent;" style-hover="border-bottom:2px solid #E30613;">CATÁLOGO</a>
+        <a href="catalogo.html#lancamentos" style="padding:4px 0;border-bottom:2px solid transparent;" style-hover="border-bottom:2px solid #E30613;">LANÇAMENTOS</a>
+        <a href="catalogo.html#maisvendidos" style="padding:4px 0;border-bottom:2px solid transparent;" style-hover="border-bottom:2px solid #E30613;">MAIS VENDIDOS</a>
+        <a href="sobre.html" style="padding:4px 0;border-bottom:2px solid transparent;" style-hover="border-bottom:2px solid #E30613;">SOBRE NÓS</a>
+      </nav>
+    </sc-if>
+
+    <div style="margin-left:auto;display:flex;align-items:center;gap:6px;">
+      <button onClick="{{ toggleSearch }}" aria-label="Busca" style="background:none;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border-radius:2px;" style-hover="background:#F4F4F4;">
+        <span style="display:block;width:13px;height:13px;border:2px solid #090909;border-radius:50%;position:relative;">
+          <span style="position:absolute;right:-6px;bottom:-5px;width:7px;height:2px;background:#090909;transform:rotate(45deg);"></span>
+        </span>
+      </button>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <a href="contato.html" aria-label="Conta" style="width:38px;height:38px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border-radius:2px;" style-hover="background:#F4F4F4;">
+          <span style="display:block;width:9px;height:9px;border:2px solid #090909;border-radius:50%;"></span>
+          <span style="display:block;width:15px;height:7px;border:2px solid #090909;border-bottom:0;border-radius:8px 8px 0 0;"></span>
+        </a>
+      </sc-if>
+      <button onClick="{{ openCart }}" aria-label="Carrinho" style="background:none;width:38px;height:38px;display:flex;align-items:center;justify-content:center;position:relative;border-radius:2px;" style-hover="background:#F4F4F4;">
+        <span style="display:block;width:16px;height:14px;border:2px solid #090909;border-radius:0 0 3px 3px;position:relative;">
+          <span style="position:absolute;top:-7px;left:2px;width:8px;height:7px;border:2px solid #090909;border-bottom:0;border-radius:5px 5px 0 0;"></span>
+        </span>
+      </button>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <a href="catalogo.html" style="margin-left:10px;background:#E30613;color:#fff;font-size:12px;font-weight:800;letter-spacing:.12em;padding:13px 22px;transition:background .2s,transform .2s;" style-hover="background:#B0000A;transform:translateY(-1px);color:#fff;">COMPRAR AGORA</a>
+      </sc-if>
+    </div>
+  </div>
+  <sc-if value="{{ searchOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="border-top:1px solid #EDEDED;background:#F4F4F4;">
+      <div style="max-width:1360px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;gap:12px;">
+        <input placeholder="Buscar sneakers…" style="flex:1;min-width:0;border:1px solid #DCDCDC;background:#fff;padding:14px 16px;font-family:Archivo,sans-serif;font-size:14px;" />
+        <a href="catalogo.html" style="background:#090909;color:#fff;font-size:12px;font-weight:800;letter-spacing:.1em;padding:15px 20px;" style-hover="background:#E30613;color:#fff;">BUSCAR</a>
+      </div>
+    </div>
+  </sc-if>
+</header>
+
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed;inset:0;z-index:90;background:rgba(9,9,9,.5);animation:fadeIn .2s ease;" onClick="{{ closeMenu }}">
+    <nav style="position:absolute;top:0;left:0;bottom:0;width:min(320px,86vw);background:#fff;padding:22px 24px;display:flex;flex-direction:column;gap:2px;overflow:auto;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
+        <img src="assets/pasted-1787273895487-0.jpg" alt="Santins Imports" style="height:60px;width:auto;object-fit:contain;" />
+        <button onClick="{{ closeMenu }}" style="background:none;font-size:24px;line-height:1;">×</button>
+      </div>
+      <a href="index.html" style="padding:14px 0;border-bottom:1px solid #EEE;font-weight:800;font-size:15px;letter-spacing:.06em;">INÍCIO</a>
+      <a href="catalogo.html" style="padding:14px 0;border-bottom:1px solid #EEE;font-weight:800;font-size:15px;letter-spacing:.06em;">CATÁLOGO</a>
+      <a href="nb530.html" style="padding:14px 0;border-bottom:1px solid #EEE;font-weight:800;font-size:15px;letter-spacing:.06em;">NEW BALANCE 530</a>
+      <a href="nb9060.html" style="padding:14px 0;border-bottom:1px solid #EEE;font-weight:800;font-size:15px;letter-spacing:.06em;">NEW BALANCE 9060</a>
+      <a href="crocs.html" style="padding:14px 0;border-bottom:1px solid #EEE;font-weight:800;font-size:15px;letter-spacing:.06em;">CROCS MCQUEEN</a>
+      <a href="smartwatch.html" style="padding:14px 0;border-bottom:1px solid #EEE;font-weight:800;font-size:15px;letter-spacing:.06em;">SMARTWATCH GPS</a>
+      <a href="sobre.html" style="padding:14px 0;border-bottom:1px solid #EEE;font-weight:800;font-size:15px;letter-spacing:.06em;">SOBRE NÓS</a>
+      <a href="contato.html" style="padding:14px 0;border-bottom:1px solid #EEE;font-weight:800;font-size:15px;letter-spacing:.06em;">ATENDIMENTO</a>
+      <a href="rastreio.html" style="padding:14px 0;border-bottom:1px solid #EEE;font-weight:800;font-size:15px;letter-spacing:.06em;">RASTREAR PEDIDO</a>
+      <a href="catalogo.html" style="margin-top:22px;background:#E30613;color:#fff;font-weight:800;letter-spacing:.1em;font-size:13px;padding:16px;text-align:center;" style-hover="color:#fff;background:#B0000A;">VER CATÁLOGO</a>
+      <p style="margin:16px 0 0;font-family:'JetBrains Mono',monospace;font-size:11px;color:#6B6B6B;line-height:1.8;">Compra segura<br />Envio rastreado<br />Suporte especializado</p>
+    </nav>
+  </div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { vw: 1440, menuOpen: false, searchOpen: false };
+  componentDidMount() {
+    this.onResize = () => this.setState({ vw: window.innerWidth });
+    window.addEventListener('resize', this.onResize);
+    this.onResize();
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this.onResize); }
+  renderVals() {
+    const isMobile = this.state.vw < 1024;
+    return {
+      isMobile, isDesktop: !isMobile,
+      menuOpen: this.state.menuOpen,
+      searchOpen: this.state.searchOpen,
+      toggleMenu: () => this.setState({ menuOpen: !this.state.menuOpen }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      toggleSearch: () => this.setState({ searchOpen: !this.state.searchOpen }),
+      openCart: () => { try { window.dispatchEvent(new Event('santins:cart')); } catch (e) {} }
+    };
+  }
+}
+</script>
+</body>
+</html>
