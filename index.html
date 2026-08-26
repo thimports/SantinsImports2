@@ -81,17 +81,19 @@
     </div>
 
     <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:20px;">
-      <sc-for list="{{ destaques }}" as="p" hint-placeholder-count="4">
+      <sc-for list="{{ destaques }}" as="p" hint-placeholder-count="5">
         <article style="border:1px solid #E9E9E9;display:flex;flex-direction:column;transition:box-shadow .3s,transform .3s;" style-hover="box-shadow:0 18px 40px rgba(9,9,9,.1);transform:translateY(-4px);">
           <a href="{{ p.href }}" style="display:block;position:relative;background:#F4F4F4;aspect-ratio:1/1;overflow:hidden;">
             <img src="{{ p.img }}" alt="{{ p.nome }}" style="width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.3,1);" style-hover="transform:scale(1.06);" />
             <span style="position:absolute;top:14px;left:14px;background:#E30613;color:#fff;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;padding:6px 10px;">{{ p.badge }}</span>
           </a>
           <div style="padding:26px;display:flex;flex-direction:column;gap:12px;flex:1;">
+            <sc-if value="{{ p.nota }}" hint-placeholder-val="{{ true }}">
             <span style="display:flex;align-items:center;gap:8px;">
               <span style="color:#E30613;font-size:12px;letter-spacing:.08em;">★★★★★</span>
               <span style="font-size:12px;color:#8A8A8A;">{{ p.nota }}</span>
             </span>
+            </sc-if>
             <a href="{{ p.href }}" style="font-size:20px;font-weight:900;letter-spacing:-.02em;line-height:1.2;">{{ p.nome }}</a>
             <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;color:#9A9A9A;">{{ p.colorway }}</span>
             <div style="margin-top:6px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;">
@@ -204,6 +206,12 @@ class Component extends DCLogic {
           img: 'assets/chatgpt-image-10-de-jul-de-2026-23-21-48.jpg',
           href: 'smartwatch.html',
           de: 'R$ 349,90', por: 'R$ 129,90', pix: 'R$ 120,81', parcela: 'R$ 10,83'
+        },
+        {
+          nome: 'Kit 4 Calças Tactel Dry Fit', colorway: 'MARINHO / PRETO / CINZA / VERDE', badge: 'KIT COM 4', nota: '',
+          img: 'assets/calca-tactel-4-cores.jpg',
+          href: 'calca-tactel.html',
+          de: 'R$ 179,90', por: 'R$ 79,90', pix: 'R$ 74,31', parcela: 'R$ 6,66'
         }
       ],
       clientes: [

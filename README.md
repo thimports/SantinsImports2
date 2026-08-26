@@ -11,6 +11,7 @@ nb530.html          New Balance 530 White / Natural Indigo
 nb9060.html         New Balance 9060 Triple Black
 crocs.html          Crocs Classic Clog x The Cars Lightning McQueen
 smartwatch.html     SmartWatch GPS 1.43" AMOLED
+calca-tactel.html   Kit 4 Calças Tactel Dry Fit com Elastano
 sobre.html          Sobre nós
 contato.html        Atendimento
 faq.html            Dúvidas frequentes
@@ -73,6 +74,7 @@ Os botões de compra apontam para:
 - Crocs: `https://pagamento.santinsimports.com/checkout?product=92fc7717-a012-11f1-a1eb-46da4690ad53`
 - SmartWatch Preto: `https://pagamento.santinsimports.com/checkout?product=d5017075-a012-11f1-a1eb-46da4690ad53`
 - SmartWatch Titanium: `https://pagamento.santinsimports.com/checkout?product=3a830e39-a013-11f1-a1eb-46da4690ad53`
+- Kit 4 Calças Tactel: `https://pagamento.santinsimports.com/checkout?product=700f0e1d-a107-11f1-a1eb-46da4690ad53`
 
 ## Conteúdo a revisar antes de publicar
 
@@ -96,3 +98,30 @@ o unpkg cair, as páginas ficam em branco.
 
 O arquivo `.nojekyll` na raiz é obrigatório. Sem ele, o GitHub processa os `{{ }}`
 das páginas como template Liquid e apaga o conteúdo antes do navegador receber.
+
+
+## calca-tactel.html — pendências
+
+A página está publicada e funcional, mas alguns campos precisam da informação real
+antes de rodar tráfego pago. Todos estão marcados com `[Editável]` no código:
+
+- **Tabela de medidas** (cintura e comprimento do 38 ao 52) — hoje está com `—`
+- **Composição do tecido** (ex.: 90% poliéster / 10% elastano)
+- **Bolso traseiro** — confirmar com o fornecedor se existe
+- **Instruções de lavagem** e comportamento após lavar
+- **Origem** e **garantia**
+- Política de trocas na última pergunta do FAQ
+
+### Avaliações escritas
+
+A lista `REVIEWS` no final do arquivo está **vazia de propósito**. Enquanto ela
+estiver assim, a página não mostra nota nem contador de avaliações — só a grade
+de fotos reais de clientes.
+
+Para publicar avaliações, cole as reais dentro de `REVIEWS = [ ]`, uma por linha:
+
+```js
+{ r: 5, text: 'texto da avaliação', name: 'Nome C.', meta: 'Tam. 42', photo: 'assets/arquivo.jpg' }
+```
+
+Assim que a primeira entrar, o bloco de nota e o contador voltam a aparecer sozinhos.
